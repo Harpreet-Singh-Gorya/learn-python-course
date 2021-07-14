@@ -1,0 +1,16 @@
+title: Learn Python
+description: In this folder I will make my notes to learn Python.
+template:
+  repo: learn-python-template
+  name: learn-python
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
